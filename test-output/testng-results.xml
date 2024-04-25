@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-25T23:36:14 PKT" name="Default suite" finished-at="2024-04-25T23:36:43 PKT" duration-ms="29450">
+  <suite started-at="2024-04-26T00:35:29 PKT" name="Default suite" finished-at="2024-04-26T00:36:00 PKT" duration-ms="31221">
     <groups>
     </groups>
-    <test started-at="2024-04-25T23:36:14 PKT" name="Default test" finished-at="2024-04-25T23:36:43 PKT" duration-ms="29450">
+    <test started-at="2024-04-26T00:35:29 PKT" name="Default test" finished-at="2024-04-26T00:36:00 PKT" duration-ms="31221">
       <class name="directMacroTestPackage.DirectMacroTestCases">
-        <test-method is-config="true" signature="startChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:14 PKT" name="startChrome" finished-at="2024-04-25T23:36:14 PKT" duration-ms="157" status="PASS">
+        <test-method is-config="true" signature="startChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:29 PKT" name="startChrome" finished-at="2024-04-26T00:35:29 PKT" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChrome -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:14 PKT" name="setup" finished-at="2024-04-25T23:36:16 PKT" duration-ms="1499" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:29 PKT" name="setup" finished-at="2024-04-26T00:35:31 PKT" duration-ms="1528" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCartTestCases()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:16 PKT" name="addToCartTestCases" finished-at="2024-04-25T23:36:25 PKT" duration-ms="9442" status="PASS">
+        <test-method signature="addToCartTestCases()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:31 PKT" name="addToCartTestCases" finished-at="2024-04-26T00:35:41 PKT" duration-ms="10132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTestCases -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:25 PKT" name="tearDown" finished-at="2024-04-25T23:36:25 PKT" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:41 PKT" name="tearDown" finished-at="2024-04-26T00:35:41 PKT" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,15 +30,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:25 PKT" name="setup" finished-at="2024-04-25T23:36:26 PKT" duration-ms="489" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:41 PKT" name="setup" finished-at="2024-04-26T00:35:42 PKT" duration-ms="533" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="productQuantityValidation()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:26 PKT" name="productQuantityValidation" finished-at="2024-04-25T23:36:29 PKT" duration-ms="3002" status="PASS">
+        <test-method signature="productQuantityValidation()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:42 PKT" name="productQuantityValidation" finished-at="2024-04-26T00:35:44 PKT" duration-ms="2849" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productQuantityValidation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:29 PKT" name="tearDown" finished-at="2024-04-25T23:36:29 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:44 PKT" name="tearDown" finished-at="2024-04-26T00:35:44 PKT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,15 +49,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:29 PKT" name="setup" finished-at="2024-04-25T23:36:29 PKT" duration-ms="395" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:44 PKT" name="setup" finished-at="2024-04-26T00:35:45 PKT" duration-ms="548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchBarTestCase()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:29 PKT" name="searchBarTestCase" finished-at="2024-04-25T23:36:43 PKT" duration-ms="14087" status="PASS">
+        <test-method signature="searchBarTestCase()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:35:45 PKT" name="searchBarTestCase" finished-at="2024-04-26T00:36:00 PKT" duration-ms="15026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBarTestCase -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:43 PKT" name="tearDown" finished-at="2024-04-25T23:36:43 PKT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:36:00 PKT" name="tearDown" finished-at="2024-04-26T00:36:00 PKT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-25T23:36:43 PKT" name="CloseChrome" finished-at="2024-04-25T23:36:43 PKT" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@6c345c5f]" started-at="2024-04-26T00:36:00 PKT" name="CloseChrome" finished-at="2024-04-26T00:36:00 PKT" duration-ms="362" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseChrome -->
