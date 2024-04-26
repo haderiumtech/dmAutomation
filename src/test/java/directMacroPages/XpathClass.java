@@ -8,8 +8,8 @@ public class XpathClass {
 	
 	//Search bar test cases xpaths
 		
-	//public final String searchBar = "//input[@id='hello']"; //testing purpose to fail test case intentionally
-	    public final String searchBar = "//input[@id='search']";	
+	    public final String searchBar = "//input[@id='hello']"; //testing purpose to fail test case intentionally
+	    //public final String searchBar = "//input[@id='search']";	
 		public final String searchData = "V156W - Dell 330-Watts 11.7VDC Battery Module for EqualLogic FS7600 FS8600";
 		public final String searchButton = "//div[@class='actions']/button[@title='Search' and @class='search']/i";
 		public final String searchPageFirstRecord = "//div[@class='product-list-details']/h4[@class='product name product-item-name']/a";
@@ -43,6 +43,19 @@ public class XpathClass {
 		
 		public final String productMaxQtyCheck="//div[contains(text(), 'The maximum you may purchase is 10000.') and @id='qty-error']";
 		public final String productMaxQtyErrorMessage = "The maximum you may purchase is 10000.";
+		
+	//check form validation
+		
+		public final String checkoutEmail="//form[@class='form form-login']//input[@type='email']";
+		public final String checkoutFirstName="//form[@id='co-shipping-form']//input[@class='input-text' and @name='firstname']";
+		public final String checkoutLastName="//form[@id='co-shipping-form']//input[@class='input-text' and @name='lastname']";
+		public final String checkoutCompanyName="//form[@id='co-shipping-form']//input[@class='input-text' and @name='company']";
+		public final String checkoutAddress1 = "//form[@id='co-shipping-form']//input[@class='input-text' and @name='street[0]']";
+		public final String checkoutCountry = "//form[@id='co-shipping-form']//select[@class='select' and @name='country_id']";
+		public final String checkoutRegion = "//form[@id='co-shipping-form']//select[@class='select' and @name='region_id']";
+		public final String checkoutCity = "//form[@id='co-shipping-form']//input[@class='input-text' and @name='city']";
+		public final String checkoutPostalCode = "//form[@id='co-shipping-form']//input[@class='input-text' and @name='postcode']";
+		public final String checkoutPhone = "//form[@id='co-shipping-form']//input[@class='input-text' and @name='telephone']";
 		
 		
 }

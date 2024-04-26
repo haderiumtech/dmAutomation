@@ -6,9 +6,9 @@
       <class name="directMacroTestPackage.DirectMacroTestCases">
         <methods>
           <include name="startChrome"/>
+          <include name="addToCartTestCases"/>
           <include name="CloseChrome"/>
           <include name="setup"/>
-          <include name="searchBarTestCase"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- directMacroTestPackage.DirectMacroTestCases -->

@@ -103,6 +103,24 @@ public class DirectMacroTestCases {
 
 	}
 	
+	@Test
+	public void checkoutFormValidationVerfication() {
+		test = extent.createTest("Check form validation on check out pages");
+		base.gotoUrl(dMxpath.storagePageUrl);
+		base.verifyCurrentUrl(base.getUrl(), dMxpath.storagePageUrl);
+		base.forClick(dMxpath.storagePageFirstProduct);
+		base.forClick(dMxpath.addToCart);
+		
+		base.sendKeys(dMxpath.checkoutEmail,"testteam@yopmail.com");
+		base.sendKeys(dMxpath.checkoutFirstName,"Test");
+		base.sendKeys(dMxpath.checkoutLastName,"Test");
+		base.sendKeys(dMxpath.checkoutCompanyName,"Test");
+		base.sendKeys(dMxpath.checkoutAddress1,"Test");
+		base.sendKeys(dMxpath.checkoutCity,"Test");
+		base.sendKeys(dMxpath.checkoutPostalCode,"75260");
+		base.sendKeys(dMxpath.checkoutPhone,"03333344445");
+	}
+	
 	@AfterMethod
 	public void tearDown(ITestResult result) throws IOException {
 	    if(result.getStatus() == ITestResult.FAILURE) {
