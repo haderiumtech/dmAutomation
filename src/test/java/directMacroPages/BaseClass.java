@@ -17,6 +17,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.openqa.selenium.TakesScreenshot;
@@ -228,7 +229,26 @@ public class BaseClass {
 		}
 
 		
-		
+		 // Function to select an option from a dropdown by visible text
+	    public void selectDropdownByVisibleText(String locator, String visibleText) {
+	        WebElement dropdownElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	        Select dropdown = new Select(dropdownElement);
+	        dropdown.selectByVisibleText(visibleText);
+	    }
+
+	    // Function to select an option from a dropdown by value
+	    public void selectDropdownByValue(String locator, String value) {
+	        WebElement dropdownElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	        Select dropdown = new Select(dropdownElement);
+	        dropdown.selectByValue(value);
+	    }
+
+	    // Function to select an option from a dropdown by index
+	    public void selectDropdownByIndex(String locator, int index) {
+	        WebElement dropdownElement = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+	        Select dropdown = new Select(dropdownElement);
+	        dropdown.selectByIndex(index);
+	    }
 		
 		
 		

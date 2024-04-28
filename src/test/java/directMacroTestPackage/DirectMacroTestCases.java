@@ -58,7 +58,7 @@ public class DirectMacroTestCases {
 	{
 
 		test = extent.createTest("Test case for searching functionality");
-		//base.gotoUrl(dMxpath.dMurl);
+		base.gotoUrl(dMxpath.dMurl);
 		base.waitUntilDisplayed(dMxpath.loaderDisplay);
 		base.sendKeys(dMxpath.searchBar,dMxpath.searchData );
 		base.forClick(dMxpath.searchButton);
@@ -77,9 +77,6 @@ public class DirectMacroTestCases {
 		base.forClick(dMxpath.addToCart);
 		String checkOutPageQty = base.getText(dMxpath.checkOutPageQty);
 		base.verifyText(checkOutPageQty,dMxpath.productPageQty);
-		base.forClick(dMxpath.placOrderButton);
-		base.verifyText(base.getText(dMxpath.errorMessageToast), dMxpath.errorToast);
-		
 	}
 	
 	@Test
@@ -104,7 +101,7 @@ public class DirectMacroTestCases {
 	}
 	
 	@Test
-	public void checkoutFormValidationVerfication() {
+	public void checkoutFormValidationVerfication() throws InterruptedException {
 		test = extent.createTest("Check form validation on check out pages");
 		base.gotoUrl(dMxpath.storagePageUrl);
 		base.verifyCurrentUrl(base.getUrl(), dMxpath.storagePageUrl);
@@ -116,9 +113,14 @@ public class DirectMacroTestCases {
 		base.sendKeys(dMxpath.checkoutLastName,"Test");
 		base.sendKeys(dMxpath.checkoutCompanyName,"Test");
 		base.sendKeys(dMxpath.checkoutAddress1,"Test");
+		base.selectDropdownByVisibleText(dMxpath.checkoutCountry, "United States");
+		base.selectDropdownByVisibleText(dMxpath.checkoutRegion, "Alabama");
 		base.sendKeys(dMxpath.checkoutCity,"Test");
 		base.sendKeys(dMxpath.checkoutPostalCode,"75260");
 		base.sendKeys(dMxpath.checkoutPhone,"03333344445");
+		base.forClick(dMxpath.placOrderButton);
+		base.verifyText(base.getText(dMxpath.errorMessageToast), dMxpath.errorToast);
+		
 	}
 	
 	@AfterMethod

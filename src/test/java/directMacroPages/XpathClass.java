@@ -8,8 +8,8 @@ public class XpathClass {
 	
 	//Search bar test cases xpaths
 		
-	    public final String searchBar = "//input[@id='hello']"; //testing purpose to fail test case intentionally
-	    //public final String searchBar = "//input[@id='search']";	
+	    //public final String searchBar = "//input[@id='hello']"; //testing purpose to fail test case intentionally
+	    public final String searchBar = "//input[@id='search']";	
 		public final String searchData = "V156W - Dell 330-Watts 11.7VDC Battery Module for EqualLogic FS7600 FS8600";
 		public final String searchButton = "//div[@class='actions']/button[@title='Search' and @class='search']/i";
 		public final String searchPageFirstRecord = "//div[@class='product-list-details']/h4[@class='product name product-item-name']/a";
