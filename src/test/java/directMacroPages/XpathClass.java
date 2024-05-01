@@ -35,7 +35,7 @@ public class XpathClass {
 		
 		
 	//product min/max quantity check test cases
-		public final String homePageProduct= "(//h3[@class='product-item-name']/a[@class='product-item-link'])[1]";
+		public final String homePageProduct= "(//h3[@class='product-item-name']/a[@class='product-item-link'])[2]";
 		public final String productPageQuantity = "//div[@class='control']/input[@id='qty']";
 		
 		public final String productZeroQtyCheck="//div[contains(text(), 'Please enter a quantity greater than 0.') and @id='qty-error']";

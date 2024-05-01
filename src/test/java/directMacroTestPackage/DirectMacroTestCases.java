@@ -53,7 +53,7 @@ public class DirectMacroTestCases {
 		base.gotoUrl(dMxpath.dMurl);
 	}
 	
-	@Test
+	@Test (priority=1)
 	public void searchBarTestCase() throws InterruptedException
 	{
 
@@ -67,7 +67,7 @@ public class DirectMacroTestCases {
 		
 	}
 	
-	@Test
+	@Test (priority=2)
 	public void addToCartTestCases()
 	{
 		test = extent.createTest("Adding a product to the cart and assert quantity");
@@ -79,7 +79,7 @@ public class DirectMacroTestCases {
 		base.verifyText(checkOutPageQty,dMxpath.productPageQty);
 	}
 	
-	@Test
+	@Test (priority=3)
 	public void productQuantityValidation()
 	{
 		test= extent.createTest("Check min/max product quantity");
@@ -100,7 +100,7 @@ public class DirectMacroTestCases {
 
 	}
 	
-	@Test
+	@Test (priority=4)
 	public void checkoutFormValidationVerfication() throws InterruptedException {
 		test = extent.createTest("Check form validation on check out pages");
 		base.gotoUrl(dMxpath.storagePageUrl);

@@ -47,7 +47,7 @@ public class BaseClass {
 			System.setProperty("webdriver.chrome.driver","driver\\chromedriver.exe");
 			
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
+			//options.addArguments("--headless");
 	        options.addArguments("--disable-notifications");
 	        //arrugmentt call for allowing web pplication chrome update
 	        options.addArguments("--remote-allow-origins=*");
