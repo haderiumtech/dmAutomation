@@ -22,12 +22,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.openqa.selenium.TakesScreenshot;
 
-
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 
 
@@ -42,38 +44,58 @@ public class BaseClass {
 		public ExtentHtmlReporter htmlReporter;
 		
 		public BaseClass() {
-			//WebDriverManager.chromedriver().setup();
 			
-			System.setProperty("webdriver.chrome.driver","driver\\chromedriver.exe");
-			
-			ChromeOptions options = new ChromeOptions();
-			//options.addArguments("--headless");
+			setupDriver();
+		}
+		
+		private void setupDriver() {
+		    try {
+		        WebDriverManager.chromedriver().setup();
+		        initializeDriver();
+		    } catch (Exception e) {
+		        System.err.println("Failed to download driver automatically: " + e.getMessage());
+		        // Attempting to use a pre-downloaded driver or specifying a version known to be stable
+		        WebDriverManager.chromedriver().driverVersion("specific-version").setup();
+		        initializeDriver();
+		    }
+		}
+
+		private void initializeDriver() {
+		    ChromeOptions options = new ChromeOptions();
+		    options.addArguments("--headless");
 	        options.addArguments("--disable-notifications");
 	        //arrugmentt call for allowing web pplication chrome update
 	        options.addArguments("--remote-allow-origins=*");
-			driver=new ChromeDriver(options);
-			driver.manage().window().maximize();
-			wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-			js = (JavascriptExecutor)driver;
-			
+	        options.addArguments("--no-sandbox");
+	        options.addArguments("--disable-dev-shm-usage");
+		    //options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+		    
+		    driver = new ChromeDriver(options);
+		    driver.manage().window().maximize();
+		    wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		    js = (JavascriptExecutor) driver;
 		}
 		
 		public void setExtend() {
-			
-			htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\test-output\\Report.html");
-			htmlReporter.config().setDocumentTitle("Automation Report");
-			htmlReporter.config().setReportName("Functional Report");
-			htmlReporter.config().setTheme(Theme.STANDARD);
-			
-			extent = new ExtentReports();
-			extent.attachReporter(htmlReporter);
-			
-			extent.setSystemInfo("Hostname","LocalHost");
-			extent.setSystemInfo("OS","Windows10");
-			extent.setSystemInfo("Tester Name","Ali Hammad");
-			extent.setSystemInfo("Browser","chrome");
-			
-			
+			try {
+		        String reportPath = System.getProperty("user.dir") + "/test-output/Report.html";
+		        ExtentSparkReporter sparkReporter = new ExtentSparkReporter(reportPath);
+		        sparkReporter.config().setDocumentTitle("Automation Report");
+		        sparkReporter.config().setReportName("Functional Report");
+		        sparkReporter.config().setTheme(Theme.STANDARD);
+		        
+		        extent = new ExtentReports();
+		        extent.attachReporter(sparkReporter);
+		        extent.setSystemInfo("Hostname", System.getenv("HOSTNAME")); // Use environment variable if available
+		        extent.setSystemInfo("Tester Name", "Ali Hammad");
+		        extent.setSystemInfo("Browser", "Chrome");
+
+		        // Log the path for debugging purposes
+		        System.out.println("Report Path: " + reportPath);
+		    } catch (Exception e) {
+		        System.err.println("Error setting up the Extent Reports: " + e.getMessage());
+		        throw new RuntimeException("Failed to set up Extent Reports", e);
+		    }
 		}
 		
 		 public void closeExtentReports() {
@@ -86,15 +108,21 @@ public class BaseClass {
 		 public String getScreenShot(WebDriver driver, String screenShotName) throws IOException {
 			
 			 String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-			 TakesScreenshot ts = (TakesScreenshot) driver;
-			 File source = ts.getScreenshotAs(OutputType.FILE);
-			 
-			 String destination = System.getProperty("user.dir") + "/Screenshots/" + screenShotName + dateName + ".png";
-			 File finalDestination = new File(destination);
-			 FileUtils.copyFile(source,finalDestination);
-			 return destination;
+			    TakesScreenshot ts = (TakesScreenshot) driver;
+			    File source = ts.getScreenshotAs(OutputType.FILE);
+			    
+			    String destinationPath = System.getProperty("user.dir") + "/Screenshots/" + screenShotName + dateName + ".png";
+			    File finalDestination = new File(destinationPath);
+			    try {
+			        FileUtils.copyFile(source, finalDestination);
+			    } catch (IOException e) {
+			        System.err.println("Error taking screenshot: " + e.getMessage());
+			        throw e;
+			    }
+			    return destinationPath;
 			 
 		 }
+		 
 		 
 		 public void testcaseName(String testName) {
 			 test = extent.createTest(testName);

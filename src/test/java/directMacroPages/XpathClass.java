@@ -17,9 +17,8 @@ public class XpathClass {
 		//public final String searchDataFirstProduct = "(//ul[@id=\"product-search-list\"]/li/a)[1]";
 		
 		
-	//Add To Cart TestCases Xpaths
-		
-		public final String storagePageUrl = "https://directmacro.com/storage-devices/storage.html";
+	//Add To Cart TestCases Xpaths		
+		public final String storagePageUrl = "https://directmacro.com/networking-devices/switches/network-switches.html";
 		public final String storagePageFirstProduct ="(//div[@class='product-list-details']/h4/a[@class='product-item-link'])[1]";
 		//public final String increaseQty ="//div[@class='custom-qty increase']/button[@class='btn-qty plus']";
 		public final String getProductQty = "//input[@id='qty' and @name='qty']";
@@ -35,7 +34,7 @@ public class XpathClass {
 		
 		
 	//product min/max quantity check test cases
-		public final String homePageProduct= "(//h3[@class='product-item-name']/a[@class='product-item-link'])[2]";
+		public final String homePageProduct= "(//h3[@class='product-item-name']/a[@class='product-item-link'])[3]";
 		public final String productPageQuantity = "//div[@class='control']/input[@id='qty']";
 		
 		public final String productZeroQtyCheck="//div[contains(text(), 'Please enter a quantity greater than 0.') and @id='qty-error']";
@@ -45,7 +44,6 @@ public class XpathClass {
 		public final String productMaxQtyErrorMessage = "The maximum you may purchase is 10000.";
 		
 	//check form validation
-		
 		public final String checkoutEmail="//form[@class='form form-login']//input[@type='email']";
 		public final String checkoutFirstName="//form[@id='co-shipping-form']//input[@class='input-text' and @name='firstname']";
 		public final String checkoutLastName="//form[@id='co-shipping-form']//input[@class='input-text' and @name='lastname']";

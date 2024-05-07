@@ -33,17 +33,25 @@ public class DirectMacroTestCases {
 	@BeforeTest
 	public void startChrome() 
 	{
-		base.setExtend();
-		extent =base.extent;
-		
+		  try {
+		        base.setExtend();
+		        extent = base.extent;
+		    } catch (Exception e) {
+		        System.err.println("Error during setup: " + e.getMessage());
+		        throw new IllegalStateException("Failed to initialize reporting tools", e);
+		    }
 	}
 	
 	@AfterTest
 	public void CloseChrome() 
 	
 	{
-		base.CloseBrowser();
-		base.closeExtentReports();
+		 try {
+		        base.CloseBrowser();
+		        base.closeExtentReports();
+		    } catch (Exception e) {
+		        System.err.println("Error during teardown: " + e.getMessage());
+		    }
 		
 	}
 	
@@ -53,7 +61,7 @@ public class DirectMacroTestCases {
 		base.gotoUrl(dMxpath.dMurl);
 	}
 	
-	@Test (priority=1)
+	@Test (priority = 1)
 	public void searchBarTestCase() throws InterruptedException
 	{
 
@@ -67,7 +75,7 @@ public class DirectMacroTestCases {
 		
 	}
 	
-	@Test (priority=2)
+	@Test (priority = 2)
 	public void addToCartTestCases()
 	{
 		test = extent.createTest("Adding a product to the cart and assert quantity");
@@ -79,7 +87,7 @@ public class DirectMacroTestCases {
 		base.verifyText(checkOutPageQty,dMxpath.productPageQty);
 	}
 	
-	@Test (priority=3)
+	@Test (priority = 3)
 	public void productQuantityValidation()
 	{
 		test= extent.createTest("Check min/max product quantity");
@@ -100,7 +108,7 @@ public class DirectMacroTestCases {
 
 	}
 	
-	@Test (priority=4)
+	@Test (priority = 4)
 	public void checkoutFormValidationVerfication() throws InterruptedException {
 		test = extent.createTest("Check form validation on check out pages");
 		base.gotoUrl(dMxpath.storagePageUrl);
