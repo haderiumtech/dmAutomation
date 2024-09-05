@@ -2,92 +2,92 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-02T19:42:26 PKT" name="Default suite" finished-at="2024-05-02T19:43:26 PKT" duration-ms="60227">
+  <suite started-at="2024-09-05T20:25:20 PKT" name="Default suite" finished-at="2024-09-05T20:27:15 PKT" duration-ms="114272">
     <groups>
     </groups>
-    <test started-at="2024-05-02T19:42:26 PKT" name="Default test" finished-at="2024-05-02T19:43:26 PKT" duration-ms="60227">
+    <test started-at="2024-09-05T20:25:20 PKT" name="Default test" finished-at="2024-09-05T20:27:15 PKT" duration-ms="114272">
       <class name="directMacroTestPackage.DirectMacroTestCases">
-        <test-method is-config="true" signature="startChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:26 PKT" name="startChrome" finished-at="2024-05-02T19:42:26 PKT" duration-ms="195" status="PASS">
+        <test-method is-config="true" signature="startChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:25:20 PKT" name="startChrome" finished-at="2024-09-05T20:25:21 PKT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChrome -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:26 PKT" name="setup" finished-at="2024-05-02T19:42:29 PKT" duration-ms="2142" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:25:21 PKT" name="setup" finished-at="2024-09-05T20:25:44 PKT" duration-ms="23143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchBarTestCase()[pri:1, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:29 PKT" name="searchBarTestCase" finished-at="2024-05-02T19:42:44 PKT" duration-ms="15243" status="PASS">
+        <test-method signature="searchBarTestCase()[pri:1, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:25:44 PKT" name="searchBarTestCase" finished-at="2024-09-05T20:26:15 PKT" duration-ms="31667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchBarTestCase -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:44 PKT" name="tearDown" finished-at="2024-05-02T19:42:44 PKT" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:15 PKT" name="tearDown" finished-at="2024-09-05T20:26:16 PKT" duration-ms="875" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchBarTestCase status=SUCCESS method=DirectMacroTestCases.searchBarTestCase()[pri:1, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82] output={null}]]]>
+                <![CDATA[[TestResult name=searchBarTestCase status=SUCCESS method=DirectMacroTestCases.searchBarTestCase()[pri:1, instance:directMacroTestPackage.DirectMacroTestCases@469d003c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:44 PKT" name="setup" finished-at="2024-05-02T19:42:45 PKT" duration-ms="809" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:16 PKT" name="setup" finished-at="2024-09-05T20:26:17 PKT" duration-ms="552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addToCartTestCases()[pri:2, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:45 PKT" name="addToCartTestCases" finished-at="2024-05-02T19:42:57 PKT" duration-ms="12320" status="PASS">
+        <test-method signature="addToCartTestCases()[pri:2, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:17 PKT" name="addToCartTestCases" finished-at="2024-09-05T20:26:32 PKT" duration-ms="15555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCartTestCases -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:57 PKT" name="tearDown" finished-at="2024-05-02T19:42:57 PKT" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:32 PKT" name="tearDown" finished-at="2024-09-05T20:26:33 PKT" duration-ms="394" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addToCartTestCases status=SUCCESS method=DirectMacroTestCases.addToCartTestCases()[pri:2, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82] output={null}]]]>
+                <![CDATA[[TestResult name=addToCartTestCases status=SUCCESS method=DirectMacroTestCases.addToCartTestCases()[pri:2, instance:directMacroTestPackage.DirectMacroTestCases@469d003c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:57 PKT" name="setup" finished-at="2024-05-02T19:42:58 PKT" duration-ms="945" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:33 PKT" name="setup" finished-at="2024-09-05T20:26:34 PKT" duration-ms="840" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="productQuantityValidation()[pri:3, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:42:58 PKT" name="productQuantityValidation" finished-at="2024-05-02T19:43:04 PKT" duration-ms="6122" status="PASS">
+        <test-method signature="productQuantityValidation()[pri:3, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:34 PKT" name="productQuantityValidation" finished-at="2024-09-05T20:26:48 PKT" duration-ms="14785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- productQuantityValidation -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:43:04 PKT" name="tearDown" finished-at="2024-05-02T19:43:04 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:48 PKT" name="tearDown" finished-at="2024-09-05T20:26:49 PKT" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=productQuantityValidation status=SUCCESS method=DirectMacroTestCases.productQuantityValidation()[pri:3, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82] output={null}]]]>
+                <![CDATA[[TestResult name=productQuantityValidation status=SUCCESS method=DirectMacroTestCases.productQuantityValidation()[pri:3, instance:directMacroTestPackage.DirectMacroTestCases@469d003c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:43:04 PKT" name="setup" finished-at="2024-05-02T19:43:05 PKT" duration-ms="694" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:49 PKT" name="setup" finished-at="2024-09-05T20:26:49 PKT" duration-ms="672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkoutFormValidationVerfication()[pri:4, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:43:05 PKT" name="checkoutFormValidationVerfication" finished-at="2024-05-02T19:43:26 PKT" duration-ms="20785" status="PASS">
+        <test-method signature="checkoutFormValidationVerfication()[pri:4, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:26:49 PKT" name="checkoutFormValidationVerfication" finished-at="2024-09-05T20:27:14 PKT" duration-ms="24838" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkoutFormValidationVerfication -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:43:26 PKT" name="tearDown" finished-at="2024-05-02T19:43:26 PKT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:27:14 PKT" name="tearDown" finished-at="2024-09-05T20:27:14 PKT" duration-ms="117" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkoutFormValidationVerfication status=SUCCESS method=DirectMacroTestCases.checkoutFormValidationVerfication()[pri:4, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82] output={null}]]]>
+                <![CDATA[[TestResult name=checkoutFormValidationVerfication status=SUCCESS method=DirectMacroTestCases.checkoutFormValidationVerfication()[pri:4, instance:directMacroTestPackage.DirectMacroTestCases@469d003c] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@1b39fd82]" started-at="2024-05-02T19:43:26 PKT" name="CloseChrome" finished-at="2024-05-02T19:43:26 PKT" duration-ms="845" status="PASS">
+        <test-method is-config="true" signature="CloseChrome()[pri:0, instance:directMacroTestPackage.DirectMacroTestCases@469d003c]" started-at="2024-09-05T20:27:14 PKT" name="CloseChrome" finished-at="2024-09-05T20:27:15 PKT" duration-ms="473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseChrome -->
